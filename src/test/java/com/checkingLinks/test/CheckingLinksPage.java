@@ -22,6 +22,7 @@ public CheckingLinksPage (WebDriver driver){
 
 public boolean checkingPAgeLinks(){
 	List<WebElement> links = driver.findElements(By.tagName("a"));
+	//List<WebElement> links1 = driver.findElements(By.tagName("a"));
 	String url= "";
 	List<String> brokenLinks= new ArrayList<String>();// Creamos una lista de string alias : Brokenlinks
 	List<String>okLinks= new ArrayList<String>();//Creamos una lista de string alias : okLinks
