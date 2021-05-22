@@ -17,13 +17,13 @@ public class StoreInfo {
 		 System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");	
 		 driver = new ChromeDriver ();
 		
-		driver.get("https://www.google.com");
+		driver.get("https://www.facebook.com");
 		driver.manage().window().maximize();
 
 	    WebElement table;
 
 	    WebDriverWait wait = new WebDriverWait(driver, 3);
-	    table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[3]")));
+	    table = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='pageFooter']")));
 	                                                                               
 	    String dataoutput;
 	    dataoutput = table.getText();
