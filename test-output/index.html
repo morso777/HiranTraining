@@ -147,6 +147,9 @@
 &lt;suite name=&quot;My test suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;stringA&quot; value=&quot;I love &quot;/&gt;
   &lt;parameter name=&quot;stringB&quot; value=&quot;test automation&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;testRunnerFrameworks.MyListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;My Second test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testRunnerFrameworks.Concat&quot;/&gt;
