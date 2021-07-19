@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.checkingLinks.test.CheckLinksTests">
+      <class name="com.factory.testcases.VerifyValidLogin">
         <methods>
-          <include name="afterClass"/>
-          <include name="checkingLinks"/>
-          <include name="beforeClass"/>
+          <include name="checkValidUser"/>
         </methods>
-      </class> <!-- com.checkingLinks.test.CheckLinksTests -->
+      </class> <!-- com.factory.testcases.VerifyValidLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
