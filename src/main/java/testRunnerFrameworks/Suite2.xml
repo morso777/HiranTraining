@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name= "My test suite" >
+	
+	<parameter name= "stringA" value= "I love "/>
+	<parameter name= "stringB" value= "test automation"/>
+	
+	<test name= "My Second test">
+		<classes>
+			<class name = "testRunnerFrameworks.Concat"> </class>
+		</classes>		
+		
+	</test>
+</suite> 

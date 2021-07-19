@@ -32,8 +32,7 @@ public class AnnotationTests {
 	System.out.println ("Login to the app");
 	}
 	
-	
-	
+		
 
 	@AfterTest
 	public void afterTest () {
@@ -47,28 +46,31 @@ public class AnnotationTests {
 	
 	
 	
+	//@Test (priority =1)
 	@Test (groups = {"grupo1"})
 	public void testConcact() {
 		System.out.println ("Test 1");
 	}
 
+	//@Test (priority =2)
 	@Test (groups = {"grupo2"})
 	public void testCount() {
 		System.out.println ("Test 2");
 	}
 	
-	
+	//@Test (priority =3)
 	@Test (groups = {"grupo3"})
 	public void testConcact2() {
 		System.out.println ("Test 3");
 	}
 	
-	@Test (groups = {"grupo4"})
+	//@Test (priority =4)
+	@Test (groups = {"grupo1"})
 	public void testCount2() {
 		System.out.println ("Test 4");
 	}
 	
-		
+	
 	
 	
 }
