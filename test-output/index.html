@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-My_test_suite" class="navigator-link ">
-                    <span>C:\Users\hiran.pena\git\HiranTraining\src\main\java\testRunnerFrameworks\Suite2.xml</span>
+                    <span>C:\Users\hiran.pena\git\HiranTraining\src\main\java\testRunnerFrameworks\Suite3.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content passed suite-My_test_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-My_test_suite" title="testRunnerFrameworks.Concat" class="method navigator-link" hash-for-method="testConcact(I love , test automation)">testConcact(I love , test automation)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-My_test_suite" title="tests.WikiTests" class="method navigator-link" hash-for-method="testWikiSearch">testWikiSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-My_test_suite -->
@@ -122,15 +122,14 @@
           <div class="suite-My_test_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testRunnerFrameworks.Concat</span>
+              <span class="class-name">tests.WikiTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testConcact(I love , test automation)">
-                  </a> <!-- testConcact(I love , test automation) -->
-                  <span class="method-name">testConcact</span>
-                  <span class="parameters">(I love , test automation)</span>
+                  <a name="testWikiSearch">
+                  </a> <!-- testWikiSearch -->
+                  <span class="method-name">testWikiSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -138,23 +137,19 @@
         </div> <!-- panel My_test_suite -->
         <div panel-name="test-xml-My_test_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\hiran.pena\git\HiranTraining\src\main\java\testRunnerFrameworks\Suite2.xml</span>
+            <span class="header-content">C:\Users\hiran.pena\git\HiranTraining\src\main\java\testRunnerFrameworks\Suite3.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;My test suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;parameter name=&quot;stringA&quot; value=&quot;I love &quot;/&gt;
-  &lt;parameter name=&quot;stringB&quot; value=&quot;test automation&quot;/&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;testRunnerFrameworks.MyListener&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;My Second test&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;My third test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testRunnerFrameworks.Concat&quot;/&gt;
+      &lt;class name=&quot;tests.WikiTests&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- My Second test --&gt;
+  &lt;/test&gt; &lt;!-- My third test --&gt;
 &lt;/suite&gt; &lt;!-- My test suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,7 +161,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">My Second test (1 class)</span>
+                <span class="test-name">My third test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -194,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testConcact')
-data.setCell(0, 2, 'testRunnerFrameworks.Concat')
-data.setCell(0, 3, 7);
+data.setCell(0, 1, 'testWikiSearch')
+data.setCell(0, 2, 'tests.WikiTests')
+data.setCell(0, 3, 1439);
 window.suiteTableData['My_test_suite']= { tableData: data, tableDiv: 'times-div-My_test_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-My_test_suite">
               </div> <!-- times-div-My_test_suite -->
             </div> <!-- times-div -->
@@ -227,11 +222,19 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testRunnerFrameworks.Concat</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">testConcact(I love , test automation)</span>
+              <div class="chronological-class-name">tests.WikiTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite(chrome)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">testWikiSearch</span>
+                <span class="method-start">3006 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">4505 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

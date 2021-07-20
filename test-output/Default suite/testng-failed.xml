@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.factory.testcases.VerifyValidLogin">
+      <class name="tests.WikiTests">
         <methods>
-          <include name="checkValidUser"/>
+          <include name="testWikiSearch"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
         </methods>
-      </class> <!-- com.factory.testcases.VerifyValidLogin -->
+      </class> <!-- tests.WikiTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

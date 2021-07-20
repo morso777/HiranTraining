@@ -2,28 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-18T23:17:58 CDT" name="My test suite" finished-at="2021-07-18T23:17:58 CDT" duration-ms="34">
+  <suite started-at="2021-07-19T18:09:42 CDT" name="My test suite" finished-at="2021-07-19T18:09:43 CDT" duration-ms="1460">
     <groups>
     </groups>
-    <test started-at="2021-07-18T23:17:58 CDT" name="My Second test" finished-at="2021-07-18T23:17:58 CDT" duration-ms="34">
-      <class name="testRunnerFrameworks.Concat">
-        <test-method signature="testConcact(java.lang.String, java.lang.String)[pri:0, instance:testRunnerFrameworks.Concat@4278a03f]" started-at="2021-07-18T23:17:58 CDT" name="testConcact" finished-at="2021-07-18T23:17:58 CDT" duration-ms="7" status="PASS">
+    <test started-at="2021-07-19T18:09:42 CDT" name="My third test" finished-at="2021-07-19T18:09:43 CDT" duration-ms="1460">
+      <class name="tests.WikiTests">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:tests.WikiTests@229d10bd]" started-at="2021-07-19T18:09:39 CDT" name="beforeSuite" finished-at="2021-07-19T18:09:42 CDT" duration-ms="2989" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[I love ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test automation]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testConcact -->
-      </class> <!-- testRunnerFrameworks.Concat -->
-    </test> <!-- My Second test -->
+        </test-method> <!-- beforeSuite -->
+        <test-method signature="testWikiSearch()[pri:0, instance:tests.WikiTests@229d10bd]" started-at="2021-07-19T18:09:42 CDT" name="testWikiSearch" finished-at="2021-07-19T18:09:43 CDT" duration-ms="1439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWikiSearch -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.WikiTests@229d10bd]" started-at="2021-07-19T18:09:43 CDT" name="afterSuite" finished-at="2021-07-19T18:09:44 CDT" duration-ms="1021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- tests.WikiTests -->
+    </test> <!-- My third test -->
   </suite> <!-- My test suite -->
 </testng-results>
