@@ -16,10 +16,9 @@ public class CheckLinksTests {
   WebDriver driver;
   CheckingLinksPage page;
   
-  	String urlDEV ="https://www.dev.finning.com/en_CA/products/used/product-category/product-family.html?type=20";
+  	String url ="https://www.google.html";
 	
-	String urlUAT= "https://www.uat.finning.com/en_CA/products/used/product-category/product-family.html?type=20";
-	
+
 	
   @BeforeClass
   public void beforeClass(){
@@ -28,7 +27,7 @@ public class CheckLinksTests {
 			  page = new CheckingLinksPage(driver);	
 			  driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
 			  			      
-			  driver.get(urlDEV);
+			  driver.get(url);
 				             
 				
 			  driver.manage().window().maximize() ;

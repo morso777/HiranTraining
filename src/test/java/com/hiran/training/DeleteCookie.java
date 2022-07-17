@@ -10,18 +10,16 @@ import org.testng.annotations.Test;
 public class DeleteCookie {
 	
 	 @Test
-		public static void main(String[] args)throws InterruptedException {	
-		 
+		public static void main(String[] args)throws InterruptedException {			 
 			 		 	
-			 String urlIEDEV= "https://www.google.com";		 
+			 String url= "https://www.google.com";		 
 			 						
 		     WebDriver driver;
 			 System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver.exe");	
-			 driver = new ChromeDriver ();
-			
+			 driver = new ChromeDriver ();			
 			 
 			 //open url
-			 driver.get(urlIEDEV);
+			 driver.get(url);
 			 driver.manage().window().maximize();
 			 driver.manage().timeouts().implicitlyWait(2,TimeUnit.SECONDS) ;
 			 Set<org.openqa.selenium.Cookie> allCookies= driver.manage().getCookies();
@@ -34,15 +32,15 @@ public class DeleteCookie {
 				 System.out.println ("Domain = "+ cookie.getDomain());
 				 System.out.println ("Path   = "+ cookie.getPath());
 				 System.out.println ("Value  = "+ cookie.getValue());
-				 System.out.println ("====================================");
-				 
+				 System.out.println ("====================================");				 
 				 driver.manage().deleteAllCookies();
 				 
 				 Set<org.openqa.selenium.Cookie> afterDel= driver.manage().getCookies();
 				 System.out.println("Count of cookies after delete is = " + afterDel.size());
-				 
-				 
+				 				 
 			 }
-
 	 }
+	 
+	 
+	
 }

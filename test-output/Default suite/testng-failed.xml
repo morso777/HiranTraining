@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.WikiTests">
+      <class name="com.checkingLinks.test.CheckLinksTests">
         <methods>
-          <include name="testWikiSearch"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
+          <include name="afterClass"/>
+          <include name="checkingLinks"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- tests.WikiTests -->
+      </class> <!-- com.checkingLinks.test.CheckLinksTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
